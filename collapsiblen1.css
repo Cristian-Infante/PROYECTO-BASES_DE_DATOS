@@ -1,0 +1,523 @@
+.collapsiblen-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1617634795446-b58c985ec639?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDh8fGJsdXJ8ZW58MHx8fHwxNjU5NDg3NzYx&ixlib=rb-1.2.1&w=1500');
+}
+.collapsiblen-header {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  max-width: auto;
+  align-self: flex-start;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.collapsiblen-container01 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+.collapsiblen-text {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+.collapsiblen-container02 {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  align-self: center;
+  margin-top: var(--dl-space-space-fiveunits);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+  justify-content: center;
+}
+.collapsiblen-container03 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-doubleunit);
+  position: relative;
+  align-self: center;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.collapsiblen-form {
+  width: 100%;
+  height: auto;
+  padding: var(--dl-space-space-unit);
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.collapsiblen-container04 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: center;
+}
+.collapsiblen-text03 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
+.collapsiblen-container05 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  margin-top: var(--dl-space-space-fourunits);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-fourunits);
+  flex-direction: column;
+  justify-content: center;
+}
+.collapsiblen-container06 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: row;
+  justify-content: center;
+}
+.collapsiblen-text04 {
+  width: 30%;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+}
+.collapsiblen-textinput {
+  width: 50%;
+  padding: var(--dl-space-space-unit);
+  font-size: 20px;
+  text-align: center;
+  margin-left: var(--dl-space-space-tripleunit);
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: rgba(238, 238, 238, 0.3);
+}
+.collapsiblen-container07 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: row;
+  justify-content: center;
+}
+.collapsiblen-text05 {
+  width: 30%;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+}
+.collapsiblen-textinput1 {
+  width: 50%;
+  padding: var(--dl-space-space-unit);
+  font-size: 20px;
+  text-align: center;
+  margin-left: var(--dl-space-space-tripleunit);
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: rgba(238, 238, 238, 0.3);
+}
+.collapsiblen-button {
+  color: #ffffff;
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: #00443e;
+}
+.collapsiblen-button01 {
+  top: var(--dl-space-space-halfunit);
+  color: #ffffff;
+  right: var(--dl-space-space-halfunit);
+  position: absolute;
+  padding-top: 3px;
+  border-width: 0px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 20px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: 3px;
+  background-color: #00443e;
+}
+.collapsiblen-container08 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-doubleunit);
+  position: relative;
+  align-self: center;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.collapsiblen-form1 {
+  width: 100%;
+  height: auto;
+  padding: var(--dl-space-space-unit);
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.collapsiblen-container09 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: center;
+}
+.collapsiblen-text06 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
+.collapsiblen-container10 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  margin-top: var(--dl-space-space-fourunits);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-fourunits);
+  flex-direction: row;
+  justify-content: center;
+}
+.collapsiblen-text07 {
+  width: 30%;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+}
+.collapsiblen-select {
+  width: 50%;
+  font-size: 20px;
+  text-align: center;
+  margin-left: var(--dl-space-space-tripleunit);
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-unit);
+  background-color: rgba(238, 238, 238, 0.3);
+}
+.collapsiblen-button02 {
+  color: #ffffff;
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: #00443e;
+}
+.collapsiblen-button03 {
+  top: var(--dl-space-space-halfunit);
+  color: #ffffff;
+  right: var(--dl-space-space-halfunit);
+  position: absolute;
+  padding-top: 3px;
+  border-width: 0px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 20px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: 3px;
+  background-color: #00443e;
+}
+.collapsiblen-container11 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-doubleunit);
+  position: relative;
+  align-self: center;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.collapsiblen-container12 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: center;
+}
+.collapsiblen-container13 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  margin-top: var(--dl-space-space-fourunits);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-fourunits);
+  flex-direction: row;
+  justify-content: center;
+}
+.collapsiblen-text08 {
+  width: 30%;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+}
+.collapsiblen-select1 {
+  width: 50%;
+  font-size: 20px;
+  text-align: center;
+  margin-left: var(--dl-space-space-tripleunit);
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-unit);
+  background-color: rgba(238, 238, 238, 0.3);
+}
+.collapsiblen-button04 {
+  color: #ffffff;
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: #00443e;
+}
+.collapsiblen-form2 {
+  width: 100%;
+  height: auto;
+  padding: var(--dl-space-space-unit);
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.collapsiblen-container14 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: center;
+}
+.collapsiblen-container15 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  margin-top: var(--dl-space-space-fourunits);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-fourunits);
+  flex-direction: column;
+  justify-content: center;
+}
+.collapsiblen-container16 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: row;
+  justify-content: center;
+}
+.collapsiblen-text09 {
+  width: 30%;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+}
+.collapsiblen-textinput2 {
+  width: 50%;
+  padding: var(--dl-space-space-unit);
+  font-size: 20px;
+  text-align: center;
+  margin-left: var(--dl-space-space-tripleunit);
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: rgba(238, 238, 238, 0.3);
+}
+.collapsiblen-container17 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: row;
+  justify-content: center;
+}
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.collapsiblen-text10 {
+  width: 30%;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+}
+.collapsiblen-textinput3 {
+  width: 50%;
+  padding: var(--dl-space-space-unit);
+  font-size: 20px;
+  text-align: center;
+  margin-left: var(--dl-space-space-tripleunit);
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: rgba(238, 238, 238, 0.3);
+}
+.collapsiblen-button05 {
+  color: #ffffff;
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: #00443e;
+}
+.collapsiblen-button06 {
+  top: var(--dl-space-space-halfunit);
+  color: #ffffff;
+  right: var(--dl-space-space-halfunit);
+  position: absolute;
+  padding-top: 3px;
+  border-width: 0px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 20px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: 3px;
+  background-color: #00443e;
+}
+.collapsiblen-footer {
+  width: 100%;
+  display: flex;
+  max-width: auto;
+  align-self: flex-end;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-doubleunit);
+  padding-right: var(--dl-space-space-doubleunit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  justify-content: space-between;
+}
+.collapsiblen-text11 {
+  color: #ffffff;
+  font-size: 12px;
+}
+.collapsiblen-icon-group {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.collapsiblen-button07 {
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  align-items: center;
+  border-width: 0px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+}
+.collapsiblen-icon {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+  margin-right: 0px;
+}
+.collapsiblen-button08 {
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  align-items: center;
+  border-width: 0px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+}
+.collapsiblen-icon2 {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+.collapsiblen-button09 {
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  align-items: center;
+  padding-top: 0px;
+  border-width: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  flex-direction: column;
+  padding-bottom: 0px;
+  justify-content: center;
+  background-color: transparent;
+}
+.collapsiblen-icon4 {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+.collapsiblen-button10 {
+  top: var(--dl-space-space-unit);
+  left: var(--dl-space-space-unit);
+  color: #ffffff;
+  position: absolute;
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: #00443e;
+}
+@media(max-width: 767px) {
+  .collapsiblen-header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .collapsiblen-footer {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .collapsiblen-text11 {
+    text-align: center;
+    margin-left: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 479px) {
+  .collapsiblen-header {
+    padding: var(--dl-space-space-unit);
+  }
+  .collapsiblen-footer {
+    padding: var(--dl-space-space-unit);
+    flex-direction: column;
+  }
+  .collapsiblen-text11 {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}

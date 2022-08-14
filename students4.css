@@ -1,0 +1,99 @@
+.students-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1617634795446-b58c985ec639?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDh8fGJsdXJ8ZW58MHx8fHwxNjU5NDg3NzYx&ixlib=rb-1.2.1&w=1500');
+}
+.students-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+.students-text {
+  color: #ffffff;
+}
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.students-container2 {
+  width: 60%;
+  height: 90%;
+  display: flex;
+  align-self: center;
+  margin-top: var(--dl-space-space-fiveunits);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-fiveunits);
+  flex-direction: row;
+  justify-content: center;
+}
+.students-container3 {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.students-form {
+  width: 100%;
+  height: auto;
+  padding: var(--dl-space-space-unit);
+  align-self: center;
+}
+.students-container4 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: center;
+}
+.students-text3 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+}
+.students-container5 {
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.students-footer {
+  width: 100%;
+  display: flex;
+  max-width: auto;
+  align-self: flex-end;
+  align-items: center;
+  padding-left: var(--dl-space-space-doubleunit);
+  padding-right: var(--dl-space-space-doubleunit);
+  justify-content: space-between;
+}
+.students-text2 {
+  color: #ffffff;
+  font-size: 16px;
+}
+.students-icon-group {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}

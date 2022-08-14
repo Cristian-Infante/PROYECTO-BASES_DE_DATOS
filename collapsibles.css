@@ -1,0 +1,268 @@
+.collapsibles-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1617634795446-b58c985ec639?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDh8fGJsdXJ8ZW58MHx8fHwxNjU5NDg3NzYx&ixlib=rb-1.2.1&w=1500');
+}
+.collapsibles-header {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  max-width: auto;
+  align-self: flex-start;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.collapsibles-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.collapsibles-text {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+.collapsibles-container2, .collapsibles-container7 {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  align-self: center;
+  margin-top: var(--dl-space-space-fourunits);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-fourunits);
+  flex-direction: row;
+  justify-content: center;
+}
+.collapsibles-container3 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-doubleunit);
+  position: relative;
+  align-self: center;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.collapsibles-form {
+  width: 100%;
+  height: auto;
+  padding: var(--dl-space-space-unit);
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.collapsibles-container4 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: center;
+}
+.collapsibles-text3 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
+.collapsibles-container5 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  padding-top: var(--dl-space-space-doubleunit);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-doubleunit);
+  justify-content: center;
+}
+.collapsibles-button {
+  color: #ffffff;
+  border-width: 0px;
+  margin-right: var(--dl-space-space-unit);
+  border-radius: 20px;
+  background-color: #00443e;
+}
+.collapsibles-button1 {
+  color: #ffffff;
+  margin-left: var(--dl-space-space-unit);
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: #00443e;
+}
+.collapsibles-container6 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  margin-top: var(--dl-space-space-fourunits);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-fourunits);
+  flex-direction: row;
+  justify-content: center;
+}
+.collapsibles-text4 {
+  width: 30%;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+}
+.collapsibles-select {
+  width: 50%;
+  font-size: 20px;
+  text-align: center;
+  margin-left: var(--dl-space-space-tripleunit);
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-unit);
+  background-color: rgba(238, 238, 238, 0.3);
+}
+.collapsibles-button2 {
+  color: #ffffff;
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: #00443e;
+}
+.collapsibles-button3 {
+  top: var(--dl-space-space-halfunit);
+  color: #ffffff;
+  right: var(--dl-space-space-halfunit);
+  position: absolute;
+  padding-top: 3px;
+  border-width: 0px;
+  padding-left: var(--dl-space-space-halfunit);
+  border-radius: 20px;
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: 3px;
+  background-color: #00443e;
+}
+.collapsibles-footer {
+  width: 100%;
+  display: flex;
+  max-width: auto;
+  align-self: flex-end;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-doubleunit);
+  padding-right: var(--dl-space-space-doubleunit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  justify-content: space-between;
+}
+.collapsibles-text5 {
+  color: #ffffff;
+  font-size: 12px;
+}
+.collapsibles-icon-group {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.collapsibles-button4 {
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  align-items: center;
+  border-width: 0px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+}
+.collapsibles-icon {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+  margin-right: 0px;
+}
+.collapsibles-button5 {
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  align-items: center;
+  border-width: 0px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+}
+.collapsibles-icon2 {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+.collapsibles-button6 {
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  align-items: center;
+  padding-top: 0px;
+  border-width: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  flex-direction: column;
+  padding-bottom: 0px;
+  justify-content: center;
+  background-color: transparent;
+}
+.collapsibles-icon4 {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+.collapsibles-button7 {
+  top: var(--dl-space-space-unit);
+  left: var(--dl-space-space-unit);
+  color: #ffffff;
+  position: absolute;
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: #00443e;
+}
+@media(max-width: 767px) {
+  .collapsibles-header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .collapsibles-footer {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .collapsibles-text5 {
+    text-align: center;
+    margin-left: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 479px) {
+  .collapsibles-header {
+    padding: var(--dl-space-space-unit);
+  }
+  .collapsibles-footer {
+    padding: var(--dl-space-space-unit);
+    flex-direction: column;
+  }
+  .collapsibles-text5 {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
