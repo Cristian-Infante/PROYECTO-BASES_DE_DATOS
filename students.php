@@ -14,6 +14,14 @@
       $Estudiante = $_GET['student'];
       $sql = "INSERT INTO inscripciones VALUES('$Curso','$Estudiante','$Año','$Periodo')";   
       pg_query($sql);
+      $update = "SELECT cod_nota FROM notas WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo' ORDER BY cod_nota;";
+      $update = pg_query($update);
+      while($row3 = pg_fetch_object($update)){
+        $codN = $row3->cod_nota;
+        $date = date('Y-m-d');
+        $temp = "INSERT INTO calificaciones (cod_nota, valor, fecha, cod_curso, cod_estudiante, año, periodo) VALUES('$codN', '0', '$date', '$Curso', '$Estudiante', '$Año', '$Periodo');";
+        $temp = pg_query($temp);
+      }
       header('location: students.php');
     }
     if($_GET['remove'] == 'remove') {

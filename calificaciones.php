@@ -26,28 +26,6 @@
         $temp = pg_query($temp);
         $i++;
       }
-
-      //$temp = "SELECT valor FROM calificaciones WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo' AND cod_estudiante='$SEdit->cod_estudiante' AND cod_nota='$codN' GROUP BY cod_estudiante, valor;";
-      //$temp = pg_query($temp);
-      //$temp = pg_fetch_object($temp);
-
-      /*$notasE = pg_query("SELECT SUM(porcentaje) AS prom FROM notas WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo';");
-      $snotasE = pg_fetch_object($notasE);
-      $EditE = pg_query("SELECT porcentaje FROM notas WHERE cod_nota='$CodeE';");
-      $SEditE = pg_fetch_object($EditE);
-
-      $_SESSION['sporcentajeE'] = $snotasE->prom + $PorcentajeE - $SEditE->porcentaje;
-      $sporcentajeE = $_SESSION['sporcentajeE'];
-
-
-      if($sporcentajeE > 100){
-        echo '<script language="javascript">alert("...SUPERANDO EL 100%...");</script>';
-      }
-      else{
-        $sql = "UPDATE notas SET descripcion='$DescripcionE', porcentaje='$PorcentajeE' WHERE cod_nota='$CodeE';";
-        pg_query($sql);
-        header('location: snotes.php');
-      }*/
     }
     if($_GET['bedit'] == 'bedit'){
 
@@ -104,6 +82,7 @@
         data-tag="font" />
         
     <link rel="stylesheet" href="./style1.css" />
+    <link rel="stylesheet" href="./stylen.css" />
     <link href="./collapsibles.css" rel="stylesheet" />
     <link href="./students4.css" rel="stylesheet" />
     <link href="./studentS.css" rel="stylesheet" />
@@ -153,9 +132,17 @@ input::-webkit-inner-spin-button {
 
 
         <div id="principal" class="students-nav1">
-          <span class="students-text2">Enrolled students</span>
+          <span class="students-text2">Current notes</span>
           <div class="collapsibles-container5">
+            <?php 
+                $notasE = pg_query("SELECT COUNT(*) AS prom FROM notas WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo';");
+                $snotasE = pg_fetch_object($notasE);
+              if($snotasE->prom != 0){
+            ?>
             <button id="bEdit" class="collapsibles-button button">Edit notes</button>
+            <?php
+            }
+            ?>
             <?php 
               if($cantidad == 0){
                 blank();
@@ -172,11 +159,14 @@ input::-webkit-inner-spin-button {
                   <th class="col">Last name</th>
                   <?php 
                     $i = 1;
-                    $notasE = pg_query("SELECT COUNT(*) AS prom FROM notas WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo';");
-                    $snotasE = pg_fetch_object($notasE);
+                    if($snotasE->prom == 0){
+                      ?>
+                      <th class="col">There are no notes</th>
+                      <?php
+                    }
                     while($i <= $snotasE->prom){
                   ?>
-                    <th class="col">Nota <?php echo $i ?></th>
+                    <th class="col">Note <?php echo $i ?></th>
                   <?php
                     $i++;
                     }
@@ -266,7 +256,7 @@ input::-webkit-inner-spin-button {
                           $snotasE = pg_fetch_object($notasE);
                           while($i <= $snotasE->prom){
                         ?>
-                          <th class="col">Nota <?php echo $i ?></th>
+                          <th class="col">Note <?php echo $i ?></th>
                         <?php
                           $i++;
                           }
@@ -294,7 +284,7 @@ input::-webkit-inner-spin-button {
                             $temp = pg_fetch_object($temp);
                         ?>
                           <td>
-                            <input name="valor[]" class="collapsiblen-textinput4 input" value="<?php echo $temp->valor; ?>" placeholder="<?php echo $temp->valor; ?>" type="number" step="0.1" min="0" max="5"></input>
+                            <input id="edit" name="valor[]" class="collapsiblen-textinput4 input" value="<?php echo $temp->valor; ?>" placeholder="<?php echo $temp->valor; ?>" type="number" step="0.1" min="0" max="5"></input>
                         </td>
                         <?php
                           }
