@@ -47,11 +47,18 @@
       $Descripcion = $_GET['descripcion'];
       $Porcentaje = $_GET['porcentaje'];
       $notas = pg_query("SELECT SUM(porcentaje) AS prom FROM notas WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo';");
-      $snotas = pg_fetch_object($notas);
-      $_SESSION['sporcentaje'] = $snotas->prom + $Porcentaje;
-      $sporcentaje = $_SESSION['sporcentaje'];
-      if($sporcentaje > 100){
-        echo '<script language="javascript">alert("Superando el 100%");</script>';
+      if(!empty($notas)){
+        $snotas = pg_fetch_object($notas);
+        $_SESSION['sporcentaje'] = $snotas->prom + $Porcentaje;
+        $sporcentaje = $_SESSION['sporcentaje'];
+        if($sporcentaje > 100){
+          echo '<script language="javascript">alert("Superando el 100%");</script>';
+        }
+        else{
+          $sql = "INSERT INTO notas(descripcion, porcentaje, cod_curso, año, periodo) VALUES('$Descripcion', '$Porcentaje', '$Curso', '$Año', '$Periodo')";
+          pg_query($sql);
+          header('location: snotes.php');
+        }
       }
       else{
         $sql = "INSERT INTO notas(descripcion, porcentaje, cod_curso, año, periodo) VALUES('$Descripcion', '$Porcentaje', '$Curso', '$Año', '$Periodo')";
@@ -188,7 +195,7 @@
                   <input name="porcentaje" type="text" required maxlength="3" placeholder="%" autocomplete="off" class="collapsiblen-textinput1 input" />
                 </div>
               </div>
-              <button name="add" name="add" class="collapsiblen-button button">Continue</button>
+              <button value="add" name="add" class="collapsiblen-button button">Continue</button>
             </div>
           </form>
           <button id="hAdd" class="collapsiblen-button01 button">x</button>

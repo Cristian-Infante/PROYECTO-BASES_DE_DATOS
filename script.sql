@@ -56,6 +56,7 @@ CREATE TABLE calificaciones (
     CONSTRAINT fk_inscripcion FOREIGN KEY (cod_curso, cod_estudiante, año, periodo) REFERENCES inscripciones(cod_curso, cod_estudiante, año, periodo) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
+/*
 
 CREATE OR REPLACE FUNCTION crear_calificaciones() RETURNS TRIGGER AS $$ 
 DECLARE
@@ -67,3 +68,5 @@ END;
 $$ LANGUAGE plpgsql;
 
 CREATE TRIGGER crear_calificaciones AFTER INSERT OR UPDATE OR DELETE ON notas FOR EACH ROW EXECUTE PROCEDURE crear_calificaciones();
+
+*/
