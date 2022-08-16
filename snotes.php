@@ -102,7 +102,7 @@
   <link rel="stylesheet" href="./stylen.css" />
   <link rel="stylesheet" href="./collapsibles.css" />
   <link rel="stylesheet" href="./students4.css" />
-  <link rel="stylesheet" href="./studentS.css" />
+  <link rel="stylesheet" href="./studentC.css" />
   <link rel="stylesheet" href="./collapsiblen1.css" />
 </head>
 
