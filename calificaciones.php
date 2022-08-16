@@ -86,7 +86,7 @@
     <link rel="stylesheet" href="./stylen.css" />
     <link href="./collapsibles.css" rel="stylesheet" />
     <link href="./students4.css" rel="stylesheet" />
-    <link href="./studentS.css" rel="stylesheet" />
+    <link href="./studentC.css" rel="stylesheet" />
     <link rel="stylesheet" href="./collapsiblen1.css" />
     <style data-tag="default-style-sheet">
       td{
@@ -138,7 +138,7 @@ input::-webkit-inner-spin-button {
             <?php 
                 $notasE = pg_query("SELECT * FROM notas WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo';");
                 $prom = pg_numrows($notasE);
-              if($snotasE->prom != 0){
+              if($prom != 0){
             ?>
             <button id="bEdit" class="collapsibles-button button">Edit notes</button>
             <?php
@@ -169,7 +169,6 @@ input::-webkit-inner-spin-button {
                   ?>
                     <th class="col"><?php echo $row->descripcion; ?></th>
                   <?php
-                    $i++;
                     }
                   ?>
                   <th class="col">Total</th>
