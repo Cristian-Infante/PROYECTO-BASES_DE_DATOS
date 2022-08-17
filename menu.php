@@ -142,7 +142,7 @@
                             </div>
                             <div class="collapsible-nav6">
                                 <span class="collapsible-text5"><span>Year</span></span>
-                                <input name="año" type="text" placeholder="Year" autocomplete="off" maxlength="4" required class="collapsible-textinput input" />
+                                <input name="año" placeholder="Year" type="number" min='2000' max='2022' autocomplete="off" maxlength="4" required class="collapsible-textinput input" />
                             </div>
                         </div>
                         <div class="collapsible-nav7">
@@ -189,7 +189,7 @@
                             </div>
                             <div class="collapsible-nav6">
                                 <span class="collapsible-text5"><span>Year</span></span>
-                                <input name="año" type="text" placeholder="Year" autocomplete="off" maxlength="4" required class="collapsible-textinput input" />
+                                <input name="año" type="number" min='2000' max='2022' placeholder="Year" autocomplete="off" maxlength="4" required class="collapsible-textinput input" />
                             </div>
                         </div>
                         <div class="collapsible-nav7">
@@ -236,7 +236,7 @@
                             </div>
                             <div class="collapsible-nav6">
                                 <span class="collapsible-text5"><span>Year</span></span>
-                                <input name="año" type="text" placeholder="Year" autocomplete="off" maxlength="4" required class="collapsible-textinput input" />
+                                <input name="año" type="number" min='2000' max='2022' placeholder="Year" autocomplete="off" maxlength="4" required class="collapsible-textinput input" />
                             </div>
                         </div>
                         <div class="collapsible-nav7">
