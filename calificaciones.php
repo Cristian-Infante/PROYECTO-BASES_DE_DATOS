@@ -26,7 +26,7 @@
         $temp = pg_query($temp);
         $i++;
       }
-      //header('location: calificaciones.php');
+      header('location: calificaciones.php');
     }
     if($_GET['bedit'] == 'bedit'){
 
