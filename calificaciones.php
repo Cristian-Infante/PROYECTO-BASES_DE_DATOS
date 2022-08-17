@@ -86,7 +86,7 @@
     <link rel="stylesheet" href="./stylen.css" />
     <link href="./collapsibles.css" rel="stylesheet" />
     <link href="./students4.css" rel="stylesheet" />
-    <link href="./studentC.css" rel="stylesheet" />
+    <link href="./studentD.css" rel="stylesheet" />
     <link rel="stylesheet" href="./collapsiblen1.css" />
     <style data-tag="default-style-sheet">
       td{

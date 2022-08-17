@@ -61,7 +61,7 @@
     <link rel="stylesheet" href="./style1.css" />
     <link href="./collapsibles.css" rel="stylesheet" />
     <link href="./students4.css" rel="stylesheet" />
-    <link href="./studentC.css" rel="stylesheet" />
+    <link href="./studentD.css" rel="stylesheet" />
   </head>
   <body>
     <div>

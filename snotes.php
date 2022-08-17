@@ -1,4 +1,7 @@
 <?php
+    $mayor = 0;
+    $mayorE = 0;
+    $Enota = 0;
     session_start();
     $usuario = $_SESSION['user_name'];
     $code = $_SESSION['user_code'];
@@ -25,7 +28,7 @@
 
 
       if($sporcentajeE > 100){
-        echo '<script language="javascript">alert("...SUPERANDO EL 100%...");</script>';
+        $mayorE = 1;
       }
       else{
         $sql = "UPDATE notas SET descripcion='$DescripcionE', porcentaje='$PorcentajeE' WHERE cod_nota='$CodeE';";
@@ -34,7 +37,6 @@
       }
     }
     if($_GET['bedit'] == 'bedit'){
-
       $Enota = $_GET['noteE'];
       $Edit = pg_query("SELECT descripcion, porcentaje FROM notas WHERE cod_nota='$Enota';");
       $SEdit = pg_fetch_object($Edit);
@@ -52,7 +54,7 @@
         $_SESSION['sporcentaje'] = $snotas->prom + $Porcentaje;
         $sporcentaje = $_SESSION['sporcentaje'];
         if($sporcentaje > 100){
-          echo '<script language="javascript">alert("Superando el 100%");</script>';
+          $mayor = 1;
         }
         else{
           $sql = "INSERT INTO notas(descripcion, porcentaje, cod_curso, año, periodo) VALUES('$Descripcion', '$Porcentaje', '$Curso', '$Año', '$Periodo')";
@@ -102,7 +104,7 @@
   <link rel="stylesheet" href="./stylen.css" />
   <link rel="stylesheet" href="./collapsibles.css" />
   <link rel="stylesheet" href="./students4.css" />
-  <link rel="stylesheet" href="./studentC.css" />
+  <link rel="stylesheet" href="./studentD.css" />
   <link rel="stylesheet" href="./collapsiblen1.css" />
 </head>
 
@@ -180,19 +182,19 @@
                   <?php
                     if($sporcentaje > 100){
                   ?>
-                  <input name="descripcion" type="text" required maxlength="100" placeholder="..." autocomplete="off" value="<?php echo $Descripcion; ?>" class="collapsiblen-textinput input" />
+                  <input id="adescripcion" name="descripcion" type="text" required maxlength="100" placeholder="..." autocomplete="off" value="<?php echo $Descripcion; ?>" class="collapsiblen-textinput input" />
                   <?php
                     }
                     else{
                   ?>
-                  <input name="descripcion" type="text" required maxlength="100" placeholder="..." autocomplete="off" class="collapsiblen-textinput input" />
+                  <input id="" name="descripcion" type="text" required maxlength="100" placeholder="..." autocomplete="off" class="collapsiblen-textinput input" />
                   <?php
                     }
                   ?>
                 </div>
                 <div class="collapsiblen-container07">
                   <span class="collapsiblen-text05">Percentage</span>
-                  <input name="porcentaje" type="text" required maxlength="3" placeholder="%" autocomplete="off" class="collapsiblen-textinput1 input" />
+                  <input id="aporcentaje" name="porcentaje" type="number" min='1' max='100' required maxlength="3" placeholder="%" autocomplete="off" class="collapsiblen-textinput1 input" />
                 </div>
               </div>
               <button value="add" name="add" class="collapsiblen-button button">Continue</button>
@@ -241,7 +243,7 @@
                 </div>
                 <div class="collapsiblen-container17">
                   <span class="collapsiblen-text10">Percentage</span>
-                  <input name="porcentajeE" id="porcentaje" type="text" required maxlength="3" placeholder="%" autocomplete="off"
+                  <input name="porcentajeE" id="porcentaje" type="number" min='1' max='100'  required maxlength="3" placeholder="%" autocomplete="off"
                     class="collapsiblen-textinput3 input" />
                 </div>
               </div>
@@ -316,7 +318,24 @@
   </div>
   <script type="text/javascript" src="notes1.js"></script>
   <script type="text/javascript">
-    if(<?php echo $Enota; ?>){
+    if (<?php echo $mayor; ?> > 0){
+        document.getElementById('principal').style.display = "none";
+        document.getElementById('search').style.display = "none";
+        document.getElementById('add').style.display = "block";
+        document.getElementById('adescripcion').setAttribute('value','<?php echo $_GET['descripcion'] ?>');
+        document.getElementById('aporcentaje').setAttribute('placeholder','Supera el 100%');
+
+    }
+    if (<?php echo $mayorE; ?> > 0){
+        document.getElementById('principal').style.display = "none";
+        document.getElementById('search').style.display = "none";
+        document.getElementById('Edit').style.display = "block";
+        document.getElementById('descripcion').setAttribute('value','<?php echo $_GET['descripcionE'] ?>');
+        document.getElementById('porcentaje').setAttribute('placeholder','Supera el 100%');
+        document.getElementById('Fbedit').setAttribute('value','<?php echo $_GET['Fbedit'] ?>');
+    }
+    
+    if(<?php echo $Enota; ?> > 0){
         document.getElementById('principal').style.display = "none";
         document.getElementById('search').style.display = "none";
         document.getElementById('Edit').style.display = "block";
