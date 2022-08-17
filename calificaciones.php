@@ -18,7 +18,7 @@
       $a1 = $_GET['valor'];
       $i = 0;
       $cE = $_SESSION['cE'];
-      $update = "SELECT cod_nota FROM notas WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo' ORDER BY cod_nota;";
+      $update = "SELECT cod_nota FROM notas WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo' ORDER BY descripcion;";
       $update = pg_query($update);
       while($row3 = pg_fetch_object($update)){
         $codN = $row3->cod_nota;
@@ -26,7 +26,7 @@
         $temp = pg_query($temp);
         $i++;
       }
-      header('location: calificaciones.php');
+      //header('location: calificaciones.php');
     }
     if($_GET['bedit'] == 'bedit'){
 
