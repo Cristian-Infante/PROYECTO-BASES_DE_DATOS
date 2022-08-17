@@ -136,7 +136,7 @@ input::-webkit-inner-spin-button {
           <span class="students-text2">Current notes</span>
           <div class="collapsibles-container5">
             <?php 
-                $notasE = pg_query("SELECT * FROM notas WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo';");
+                $notasE = pg_query("SELECT * FROM notas WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo' ORDER BY descripcion;");
                 $prom = pg_numrows($notasE);
               if($prom != 0){
             ?>
@@ -184,7 +184,7 @@ input::-webkit-inner-spin-button {
                   <td class="col"><?php echo $row['nombre']; ?></td>
                   <td class="col"><?php echo $row['apellido']; ?></td>
                   <?php 
-                    $notasE = "SELECT * FROM notas WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo' ORDER BY cod_nota;";
+                    $notasE = "SELECT * FROM notas WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo' ORDER BY descripcion;";
                     $notasE = pg_query($notasE);
                     $total = 0;
                     while($row3 = pg_fetch_object($notasE)){
@@ -195,7 +195,7 @@ input::-webkit-inner-spin-button {
                       $temp = pg_fetch_object($temp);
                       $total += ($temp->valor * $row3->porcentaje)/100;
                   ?>
-                    <td class="col" id="<?php echo $codN + $row['cod_estudiante'] ?>"><?php echo $temp->valor; ?></td>
+                    <td class="col" id="<?php echo $codN ?>"><?php echo $temp->valor; ?></td>
                   <?php
                     }
                   ?>
