@@ -190,7 +190,7 @@ input::-webkit-inner-spin-button {
                     while($row3 = pg_fetch_object($notasE)){
                       $cod = $row['cod_estudiante'];
                       $codN = $row3->cod_nota;
-                      $temp = "SELECT valor FROM calificaciones WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo' AND cod_estudiante='$cod' AND cod_nota='$codN' GROUP BY cod_estudiante, valor ORDER BY descripcion;;";
+                      $temp = "SELECT valor FROM calificaciones WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo' AND cod_estudiante='$cod' AND cod_nota='$codN' GROUP BY cod_estudiante, valor;";
                       $temp = pg_query($temp);
                       $temp = pg_fetch_object($temp);
                       $total += ($temp->valor * $row3->porcentaje)/100;
@@ -279,7 +279,7 @@ input::-webkit-inner-spin-button {
                           <input class="collapsiblen-textinput5 input" value="<?php echo $SEdit->apellido; ?>" disabled ></input>
                         </td>
                         <?php 
-                          $notasE = "SELECT cod_nota FROM notas WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo' ORDER BY cod_nota;";
+                          $notasE = "SELECT cod_nota FROM notas WHERE cod_curso='$Curso' AND año='$Año' AND periodo='$Periodo' ORDER BY descripcion;";
                           $notasE = pg_query($notasE);
                           while($row3 = pg_fetch_object($notasE)){
                             $codN = $row3->cod_nota;
